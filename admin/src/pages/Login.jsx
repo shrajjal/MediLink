@@ -51,6 +51,7 @@ const Login = () => {
                 if (data.success) {
                 localStorage.setItem("dToken", data.token);
                 setDToken(data.token);
+                navigate('/');
                 console.log(data.token);
                 
                 } else {
